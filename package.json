@@ -13,14 +13,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/netronixgroup/phoenix-client.git"
+    "url": "git+ssh://git@github.com/netronixgroup/phoenix-channels.git"
   },
   "author": "Chris McCord <chris@chrismccord.com> (http://www.phoenixframework.org)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/netronixgroup/phoenix-client/issues"
+    "url": "https://github.com/netronixgroup/phoenix-channels/issues"
   },
-  "homepage": "https://github.com/netronixgroup/phoenix-client#readme",
+  "homepage": "https://github.com/netronixgroup/phoenix-channels#readme",
   "dependencies": {
     "websocket": "^1.0.24"
   },
