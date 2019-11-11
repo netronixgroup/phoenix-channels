@@ -1,5 +1,5 @@
 
-class Push {
+export default class Push {
 
   // Initializes the Push
   //
@@ -90,5 +90,3 @@ class Push {
     this.channel.trigger(this.refEvent, {status, response})
   }
 }
-
-module.exports = Push

@@ -79,4 +79,4 @@ var Presence = {
   },
 }
 
-module.exports = Presence
+export default Presence;

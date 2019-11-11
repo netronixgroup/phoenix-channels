@@ -1,4 +1,4 @@
-module.exports = {
+export default {
     VSN: "1.0.0",
     SOCKET_STATES: {connecting: 0, open: 1, closing: 2, closed: 3},
     DEFAULT_TIMEOUT: 10000,

@@ -1,3 +1,9 @@
+import CONSTANTS from './constants';
+const querystring = require('querystring');
+const WebSocket = require('websocket').w3cwebsocket;
+import Timer from './timer';
+import Channel from './channel';
+
 const {
   VSN,
   CHANNEL_EVENTS,
@@ -5,14 +11,9 @@ const {
   SOCKET_STATES,
   DEFAULT_TIMEOUT,
   WS_CLOSE_NORMAL ,
-} = require('./constants')
+} = CONSTANTS;
 
-const querystring = require('querystring')
-const WebSocket = require('websocket').w3cwebsocket
-const Timer = require('./timer')
-const Channel = require('./channel')
-
-class Socket {
+export default class Socket {
 
   // Initializes the Socket
   //
@@ -227,5 +228,3 @@ class Socket {
     })
   }
 }
-
-module.exports = Socket

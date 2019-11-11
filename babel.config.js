@@ -5,6 +5,7 @@ module.exports = {
     }]
   ],
   plugins: [
-    '@babel/plugin-transform-classes'
+    '@babel/plugin-transform-classes',
+    '@babel/plugin-proposal-export-default-from',
   ]
 };

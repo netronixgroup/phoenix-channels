@@ -166,8 +166,6 @@
 //     })
 //
 
-module.exports = {
-  Channel: require('./channel'),
-  Socket: require('./socket'),
-  Presence: require('./presence'),
-}
+export Channel from './channel';
+export Socket from './socket';
+export Presence from './presence';

@@ -1,8 +1,10 @@
-const { CHANNEL_EVENTS, CHANNEL_STATES } = require('./constants')
-const Push = require('./push')
-const Timer = require('./timer')
+import CONSTANTS from './constants';
+import Push from './push';
+import Timer from './timer';
 
-class Channel {
+const { CHANNEL_EVENTS, CHANNEL_STATES } = CONSTANTS;
+
+export default class Channel {
   constructor(topic, params, socket) {
     this.state       = CHANNEL_STATES.closed
     this.topic       = topic
@@ -158,5 +160,3 @@ class Channel {
   isJoining(){ return this.state === CHANNEL_STATES.joining }
   isLeaving(){ return this.state === CHANNEL_STATES.leaving }
 }
-
-module.exports = Channel

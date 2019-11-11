@@ -12,7 +12,7 @@
 //    reconnectTimer.reset()
 //    reconnectTimer.scheduleTimeout() // fires after 1000
 //
-class Timer {
+export default class Timer {
   constructor(callback, timerCalc){
     this.callback  = callback
     this.timerCalc = timerCalc
@@ -35,5 +35,3 @@ class Timer {
     }, this.timerCalc(this.tries + 1))
   }
 }
-
-module.exports = Timer
